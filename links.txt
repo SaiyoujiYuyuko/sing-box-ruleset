@@ -1,6 +1,4 @@
-https://raw.githubusercontent.com/SaiyoujiYuyuko/ClashCustomScript/main/Adblock4limbo1.list
-https://raw.githubusercontent.com/SaiyoujiYuyuko/ClashCustomScript/main/Adblock4limbo2.list
-https://limbopro.com/Adblock4limbo.list
+https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adblock4limbo.list
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/SteamCN/SteamCN.yaml
 https://raw.githubusercontent.com/krisstibex/Rule/main/Surge/Rule/Game/WarZoneM.list
 https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules.list
