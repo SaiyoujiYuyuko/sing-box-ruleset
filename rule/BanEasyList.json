@@ -1,6 +1,12 @@
 {
   "rules": [
     {
+      "domain": [
+        "DOMAIN-SUFFIXionbackache.com",
+        "DOMAIN-SUFFIXionfundetc.com"
+      ]
+    },
+    {
       "domain_suffix": [
         "0008d6ba2e.com",
         "0024ad98dd.com",
@@ -26960,8 +26966,6 @@
         "rejco2.store",
         "rejco3.site",
         "rejdfa.com",
-        "rejectionbackache.com",
-        "rejectionfundetc.com",
         "rejoinedproof.com",
         "rejoinedshake.com",
         "rejowhourox.com",
