@@ -22,8 +22,6 @@ def read_yaml_from_url(url):
 
 def read_list_from_url(url):
     df = pd.read_csv(url, header=None, names=['pattern', 'address', 'other', 'other2', 'other3'])
-    df['pattern'] = df['pattern'].str.replace(",reject", "", regex=False)
-    df['address'] = df['address'].str.replace(",reject", "", regex=False)
     filtered_rows = []
     rules = []
     # 处理逻辑规则
@@ -78,7 +76,6 @@ def parse_and_convert_to_dataframe(link):
                 line_content = lines[0]
                 items = line_content.split()
             for item in items:
-                item = item.replace(",reject", "")
                 address = item.strip("'")
                 if ',' not in item:
                     if is_ipv4_or_ipv6(item):
@@ -166,7 +163,7 @@ def parse_list_file(link, output_directory):
 with open("../links.txt", 'r') as links_file:
     links = links_file.read().splitlines()
 
-links = [l for l in links if l.strip() and not l.strip().startswith("#")]
+links = [l.replace(",reject", "") for l in links if l.strip() and not l.strip().startswith("#")]
 
 output_dir = "./"
 result_file_names = []
@@ -174,3 +171,7 @@ result_file_names = []
 for link in links:
     result_file_name = parse_list_file(link, output_directory=output_dir)
     result_file_names.append(result_file_name)
+
+# 打印生成的文件名
+# for file_name in result_file_names:
+    # print(file_name)
