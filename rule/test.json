@@ -1,4 +1,10 @@
 {
-  "rules": [],
+  "rules": [
+    {
+      "domain": [
+        "yun.cat"
+      ]
+    }
+  ],
   "version": 1
 }
